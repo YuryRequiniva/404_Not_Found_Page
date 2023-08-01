@@ -14,7 +14,7 @@ body {
   justify-content: center;
   margin-top: 5px;
   width: 100%;
-  padding: 10px 10px;
+  padding: 3px 10px;
 }
 .container {
   display: flex;
@@ -74,35 +74,40 @@ button:hover {
   color: rgba(128, 128, 128, 0.719);
 }
 
-@media (min-widt: 720px) {
+@media only screen and (min-width: 768px) {
   main {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .container-image {
     display: flex;
   }
-
   .container-image {
-    max-width: 40%;
+    padding: 0;
+    margin: 0;
   }
+
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     max-width: 500px;
   }
   h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .text {
-    font-size: 2.4rem;
-    width: 50%;
+    font-size: 2.2rem;
+    width: 100%;
   }
   button {
     max-width: 30%;
   }
   .footer {
+    padding: 80px;
     font-size: 20px;
     padding: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
 }
